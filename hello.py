@@ -2,7 +2,7 @@ import argparse
 
 
 def greet(name: str, shout: bool = False) -> str:
-    message = f"Hello, {name}!"
+    message = f"Hello, {name.strip()}!"
     return message.upper() if shout else message
 
 
